@@ -22,6 +22,7 @@
       "sass": "^1.26.5"
    },
    "dependencies": {
-      "fullpage.js": "^3.0.8"
+      "fullpage.js": "^3.0.8",
+      "gsap": "^3.2.6"
    }
 }

@@ -115,7 +115,6 @@ body {
       position: absolute;
       top: -160px;
       right: 100px;
-      z-index: 10;
    }
    .slide {
       .banner-container {
@@ -139,7 +138,6 @@ body {
       position: absolute;
       top: -160px;
       right: 100px;
-      z-index: 10;
    }
    .slide {
       .header-container {
@@ -163,7 +161,6 @@ body {
       position: absolute;
       top: -160px;
       right: 100px;
-      z-index: 10;
    }
    .avi-container {
       margin-left: 50%;
@@ -184,7 +181,6 @@ body {
       position: absolute;
       top: -160px;
       right: 100px;
-      z-index: 10;
    }
    .render-container {
       margin-left: 50%;
@@ -227,10 +223,50 @@ body {
       position: absolute;
       top: -160px;
       right: 100px;
-      z-index: 10;
    }
 }
 
+.load {
+   position: fixed;
+   top: 0;
+   width: 100%;
+   height: 100vh;
+   z-index: 1000;
+   background-color: white;
+   pointer-events: none;
+   p {
+      color: black;
+      position: absolute;
+   }
+}
+.contact {
+   form {
+      margin-left: 50%;
+      transform: translateX(-50%);
+      display: flex;
+      flex-direction: column;
+      font-family: "Montserrat";
+      input,
+      textarea,
+      button {
+         width: 80%;
+         margin-left: 50%;
+         transform: translateX(-50%);
+         margin-top: 20px;
+         padding: 7px 20px;
+         font-size: 15pt;
+         resize: none;
+         font-family: "Montserrat";
+         border-radius: 20px;
+         border: none;
+      }
+      button {
+         background-color: orange;
+         font-family: "Montserrat";
+         cursor: pointer;
+      }
+   }
+}
 /*ALLGEMEIN*/
 #fp-nav ul li a span {
    background: white;
@@ -244,18 +280,6 @@ body {
 }
 .fp-slidesNav ul li a span {
    background-color: white;
-}
-
-@keyframes start {
-   0% {
-      opacity: 0;
-   }
-   100% {
-      opacity: 1;
-   }
-}
-.landing-anim {
-   animation: start 4s ease-in-out;
 }
 
 .fp-controlArrow {
