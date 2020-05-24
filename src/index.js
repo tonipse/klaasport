@@ -46,107 +46,28 @@ new fullpage("#fullpage", {
 
       if (destination.index > 1) {
          const title = section.querySelector("h1");
-         tl.fromTo(
-            title,
-            0.5,
-            {
-               y: 100,
-               opacity: 0,
-            },
-            {
-               y: 0,
-               opacity: 1,
-            }
-         );
+         tl.fromTo(title, 0.5, { y: 100, opacity: 0 }, { y: 0, opacity: 1 });
       }
       if (destination.index === 1) {
          const p1 = section.querySelector(".p1");
          const p2 = section.querySelector(".p2");
          const p3 = section.querySelector(".p3");
-         tl.fromTo(
-            p1,
-            0.5,
-            {
-               y: 100,
-               opacity: 0,
-            },
-            {
-               y: 0,
-               opacity: 1,
-            }
-         );
-         tl.fromTo(
-            p2,
-            0.5,
-            {
-               y: 100,
-               opacity: 0,
-            },
-            {
-               y: 0,
-               opacity: 1,
-            },
-            0.2
-         );
-         tl.fromTo(
-            p3,
-            0.5,
-            {
-               y: 100,
-               opacity: 0,
-            },
-            {
-               y: 0,
-               opacity: 1,
-            },
-            0.4
-         );
+         tl.fromTo(p1, 0.5, { y: 100, opacity: 0 }, { y: 0, opacity: 1 });
+         tl.fromTo(p2, 0.5, { y: 100, opacity: 0 }, { y: 0, opacity: 1 }, 0.2);
+         tl.fromTo(p3, 0.5, { y: 100, opacity: 0 }, { y: 0, opacity: 1 }, 0.4);
       }
       if (destination.index > 2 && destination.index < 7) {
          const slide = section.querySelector(".slide");
          const scale = section.querySelectorAll(".scale");
 
-         tl.fromTo(
-            slide,
-            0.5,
-            {
-               y: 100,
-               opacity: 0,
-            },
-            {
-               y: 0,
-               opacity: 1,
-            },
-            0.2
-         );
-         tl.fromTo(
-            scale,
-            0.5,
-            {
-               scale: 0.9,
-            },
-            {
-               scale: 1,
-            },
-            0.3
-         );
+         tl.fromTo(slide, 0.5, { y: 100, opacity: 0 }, { y: 0, opacity: 1 }, 0.2);
+         tl.fromTo(scale, 0.5, { scale: 0.9 }, { scale: 1 }, 0.3);
       }
       if (destination.index === 7) {
          const form = section.querySelector(".contact");
-         tl.fromTo(
-            form,
-            0.5,
-            {
-               y: 100,
-               opacity: 0,
-            },
-            {
-               y: 0,
-               opacity: 1,
-            },
-            0.2
-         );
+         const img = section.querySelector("img");
+         tl.fromTo(form, 0.5, { y: 100, opacity: 0 }, { y: 0, opacity: 1 }, 0.2);
+         tl.fromTo(img, 0.5, { y: 100, opacity: 0 }, { y: 0, opacity: 1 }, 0.25);
       }
    },
 });
-console.log("index.js is working");

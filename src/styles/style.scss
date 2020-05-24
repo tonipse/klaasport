@@ -241,6 +241,7 @@ body {
 }
 .contact {
    form {
+      margin-top: 50px;
       margin-left: 50%;
       transform: translateX(-50%);
       display: flex;
@@ -265,6 +266,15 @@ body {
          font-family: "Montserrat";
          cursor: pointer;
       }
+   }
+}
+.insta {
+   width: 100%;
+   display: flex;
+   justify-content: center;
+   margin-top: 30px;
+   img {
+      width: 50px;
    }
 }
 /*ALLGEMEIN*/
