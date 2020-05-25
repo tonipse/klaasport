@@ -443,10 +443,16 @@
          <div class="section s8">
             <h1>contact</h1>
             <div class="contact">
-               <form netlify name="contact">
-                  <input type="text" placeholder="Name" />
-                  <input type="text" placeholder="E-Mail" />
-                  <textarea cols="30" rows="10" placeholder="Message"></textarea>
+               <form name="contact" method="POST" data-netlify="true">
+                  <input type="text" name="name" placeholder="Name" />
+                  <input type="email" name="email" placeholder="E-Mail" />
+                  <textarea
+                     type="text"
+                     name="message"
+                     cols="30"
+                     rows="10"
+                     placeholder="Message"
+                  ></textarea>
                   <button type="submit">Send</button>
                </form>
             </div>
